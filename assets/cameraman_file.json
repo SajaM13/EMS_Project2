@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "9357b956-f92d-4f55-95d3-313f55220249",
+		"name": "Event management system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Camerawoman",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "lan",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/camerawoman/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"camerawoman",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "lan",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Kawther",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "11111111",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Kawther is good at taking bad pictures :D",
+									"type": "text"
+								},
+								{
+									"key": "availability[]",
+									"value": "sat",
+									"type": "text"
+								},
+								{
+									"key": "availability[]",
+									"value": "sun",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "availability[]",
+									"value": "mon",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "availability[]",
+									"value": "tue",
+									"type": "text"
+								},
+								{
+									"key": "availability[]",
+									"value": "wed",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "availability[]",
+									"value": "thu",
+									"type": "text"
+								},
+								{
+									"key": "availability[]",
+									"value": "fri",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/camerawoman/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"camerawoman",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/camerawoman/getList/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"camerawoman",
+								"getList",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
